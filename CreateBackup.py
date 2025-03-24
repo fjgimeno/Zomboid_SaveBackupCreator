@@ -70,17 +70,18 @@ clear_screen()
 
 print("Welcome to this simple Zomboid save backup tool \nMade with love by NOSFYT, you can follow my github on: https://github.com/fjgimeno")
 
-while(saveType < 1 or saveType > 5):
+while(saveType < 1 or saveType > 8):
     try:
-        saveType = int(input("\n\nPlease input the save type number: \n\t 1- Apocalypse \n\t 2- Survivor \n\t 3- Builder \n\t 4- Sandbox \n\t 5- Quit \n\n Input: "))
+        saveType = int(input("\n\nPlease input the save type number: \n\t 1- Apocalypse \n\t 2- Survivor \n\t 3- Builder \n\t 4- Sandbox \n\t 5- A Really CD DA \n\t 6- LastStand \n\t 7- Winter is Coming \n\t 8- Quit \n\n Input: "))
     except:
         print("Please enter a valid number between 1 and 5, both inclusive");
 
-if(saveType == 5):
+if(saveType == 8):
     print("\n\n\tSad to see you go. \n\n\tHappy gaming!\n\n")
+    input("\n\nPress enter to exit...")
     raise SystemExit
 
-saveTypeStr = "Apocalypse" if saveType == 1 else "Survivor" if saveType == 2 else "Builder" if saveType == 3 else "Sandbox" if saveType == 4 else ""
+saveTypeStr = "Apocalypse" if saveType == 1 else "Survivor" if saveType == 2 else "Builder" if saveType == 3 else "Sandbox" if saveType == 4 else "A Really CD DA" if saveType == 5 else "LastStand" if saveType == 6 else "Winter is Coming" if saveType == 7 else ""
     
 if (saveTypeStr == ""):
     print(get_color(1) + "Wow something went incredibly wrong (ERR Code 001)." + get_color(0))
