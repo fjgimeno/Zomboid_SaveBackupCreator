@@ -1,11 +1,6 @@
 @echo off
-REM Optimized Python executable builder
 SET SCRIPT_NAME=CreateBackup.py
 SET EXE_NAME=Zomboid_CreateBackup
-
-echo Creating optimized build of %SCRIPT_NAME%...
-
-REM Run PyInstaller with exclusions and optimizations
 pyinstaller ^
     --onefile ^
     --console ^
@@ -20,6 +15,4 @@ pyinstaller ^
     --exclude-module http ^
     --exclude-module xml ^
     %SCRIPT_NAME%
-
-echo Build complete! Executable is in the 'dist' folder.
 pause
