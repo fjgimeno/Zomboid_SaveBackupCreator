@@ -1,7 +1,8 @@
 # Zomboid_SaveBackupCreator
 A simple python tool to create backups from your saves
 
-This app only supports the main play modes, no challenge modes at all are supported.
+~~This app only supports the main play modes, no challenge modes at all are supported.~~
+Added the posibility to backup saves from the three challenge maps that exist as of March 24 2025
 
 Usage:
   Windows:
